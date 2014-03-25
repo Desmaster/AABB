@@ -44,7 +44,7 @@ public class Game extends Canvas implements Runnable {
 
 //		blocks.add(new Block(250, 250, random.nextInt(0xff)));
 
-		Arrays.binarySearch(blocks.toArray(), blocks.get(0));
+//		Arrays.binarySearch(blocks.toArray(), blocks.get(0));
 
 		long lastTime = System.nanoTime();
 		double ns = 1000000000.0 / 60.0;
@@ -123,6 +123,7 @@ public class Game extends Canvas implements Runnable {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		game.start();
+		BinarySearchTree.testTree();
 	}
 
 }

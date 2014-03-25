@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.List;
 
-public class Block {
+public class Block implements Comparable<Block> {
 
 	public int x, y, xx, yy;
 	private int width, height;
@@ -53,4 +53,8 @@ public class Block {
 		g.fillRect(x, y, width, height);
 	}
 
+	@Override
+	public int compareTo(Block b) {
+		return 0;
+	}
 }
